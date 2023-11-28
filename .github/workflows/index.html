@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Calculator</title> 
+</head> 
+<body> 
+    <table width="300" border="1" class="table"> 
+        <tr class="row"> 
+            <th colspan="4" class="calculator">Casio</th> 
+        </tr> 
+        <tr class="thisplay"> 
+            <td colspan="4"><div id="display" class="display"></div></td> 
+        </tr> 
+        <tr class="intro">
+               <th colspan="4" class="intro"> Nikhil Saxena</th>
+        <tr class="rower"> 
+            <td class="box"><button value="7" onclick="addToDisplay(7)" class="button">7</button></td> 
+            <td class="box"><button value="8" onclick="addToDisplay(8)">8</button></td> 
+            <td class="box"><button value="9" onclick="addToDisplay(9)">9</button></td> 
+            <td class="box"><button value="+" onclick="addToDisplay('+')">+</button></td> 
+        </tr> 
+        <tr class="rower"> 
+            <td class="box"><button value="4" onclick="addToDisplay(4)">4</button></td> 
+            <td class="box"><button value="5" onclick="addToDisplay(5)">5</button></td> 
+            <td class="box"><button value="6" onclick="addToDisplay(6)">6</button></td> 
+            <td class="box"><button value="-" onclick="addToDisplay('-')">-</button></td> 
+        </tr> 
+        <tr class="rower"> 
+            <td class="box"><button value="1" onclick="addToDisplay(1)">1</button></td> 
+            <td class="box"><button value="2" onclick="addToDisplay(2)">2</button></td> 
+            <td class="box"><button value="3" onclick="addToDisplay(3)">3</button></td> 
+            <td class="box"><button value="*" onclick="addToDisplay('*')">*</button></td> 
+        </tr> 
+        <tr class="rower"> 
+            <td class="boxer"><button value="0" onclick="addToDisplay(0)" class="buttonbo">0</button></td> 
+             <td class="box"><button value="=" onclick="calculate()">=</button></td> 
+            <td class="box"><button value="/" onclick="addToDisplay('/')">/</button></td> 
+            <td class="boxery"><button value="C" onclick="clearDisplay()" class="buttonbor">C</button></td> 
+        </tr> 
+
+    </table> 
+
+    <script> 
+        function addToDisplay(value) { 
+        let total =     document.getElementById('display').innerHTML += value; 
+        } 
+
+        function clearDisplay() {     document.getElementById('display').innerHTML = ''; 
+        } 
+
+        function calculate() { 
+            var displayValue = document.getElementById('display').innerHTML; 
+            var result = eval(displayValue); 
+            document.getElementById('display').innerHTML = result; 
+        } 
+
+    </script> 
+</body> 
+</html>
