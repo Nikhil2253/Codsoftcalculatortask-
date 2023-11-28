@@ -1,1 +1,95 @@
+body {
+    margin:30px ;
+}
+button{
+ width:100%;
+ height:100%;
+ color:black;
+ font-size:20px;
+ font-style:italic;
+ background-color:#e3d4f7;
+ border-radius:7px;
+ border:1px groove powderblue;
+ }
 
+.row{
+ width:100%;
+ height:10%;
+ background-color:black;
+ color:white;
+ border-radius:20px;
+}
+.display{
+  width:95%;
+  height:95%;
+  border-radius:20px;
+  background-color:white;
+  padding:0px 6px 0px 6px ;
+  text-align:right;
+  display:flex;
+  font-size:30px;
+  align-items:center;
+  justify-content:flex-end;
+  font-style:italic;
+ }
+.rower{
+ width:100%;
+ height:60px;
+ background-color:#e3d4f7;
+ color:white;
+ border-radius:20px;
+}
+.box{
+  border-radius:7px;
+  padding:2px 2px 2px 2px;
+  outine:0;
+  
+}
+.table{
+    background-color:silver;
+    border-radius:20px;
+    width:300px;
+    height:550px;
+}
+.intro{
+  width:100%;
+  height:10%;
+  border-radius:none;
+  background-color:silver;
+  color:navy;
+}
+.calculator{
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    height:70px;
+  
+    
+}
+.thisplay{
+    width:100%;
+    height:90px;
+}
+
+.boxer{
+  border-bottom-left-radius:20px;
+  border-top-left-radius:7px;
+  border-top-right-radius:7px;
+  border-bottom-right-radius:7px;
+  padding:2px 2px 2px 2px;
+  outine:0;
+  }
+.boxery{
+border-bottom-left-radius:7px;
+  border-top-left-radius:7px;
+  border-top-right-radius:7px;
+  border-bottom-right-radius:20px;
+  
+  padding:2px 2px 2px 2px;
+  outine:0;
+ }
+.buttonbo{
+    border-bottom-left-radius:20px;
+}
+.buttonbor{
+    border-bottom-right-radius:20px;
+}
